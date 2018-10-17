@@ -1,0 +1,25 @@
+<div>
+    <p><H1 align="center">Categoria |{{categoria.description}}</H1></p>
+    <code>
+        
+        <div  ng-repeat="produtos in produtos">
+            <div class="col-sm-6 col-md-3 ">
+                <div class="thumbnail">
+                    <img src="data:image/png;base64, {{produtos.img}}"  width="200px" alt="Red dot"  />
+                    <div class="caption">
+                        <h7> {{produtos.description}}</h7>
+                        <p> Preço: R${{produtos.price}}</p>
+                        <p> Marca: {{produtos.brand}}
+                        <p><a href="#" class="btn btn-primary" role="button">Visualizar</a>
+                        <a href="#" class="btn btn-success" role="button">Add Carrinho</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </code>
+    <div class="row">
+
+
+    </div>
+</div>
