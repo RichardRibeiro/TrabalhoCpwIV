@@ -1,0 +1,47 @@
+
+<div>
+    <p><H1 align="center">{{categoria.description}} | {{produto.description}}</H1></p>
+    <div>
+        <div class="col-sm-6 col-md-6 ">
+            <div class="thumbnail">
+                <img src="data:image/png;base64, {{produto.img}}"  width="200px" height="200" alt="Red dot"  />
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6 col-md-6 ">
+        <div class="panel panel-default">
+            <div class="panel-heading"> <h5 ><b>{{produto.description}}</b></h5>
+            </div>
+            <div class="panel-body">
+                <p> Preço: R$ {{produto.price}}</p>
+                <p>Marca: {{produto.brand}}</p>
+                <p>Qtde: {{produto.quantity}}</p>
+
+                <input type="number"  ng-model="compra"/>
+                <button type="button" class="btn btn-success"  ng-click="colocarNoCarrinho(produto, compra)"> Comprar</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-sm-12 col-md-12 ">
+        <div class="panel panel-default">
+            <div class="panel-heading"> <h5 ><b> Detalhes</b></h5>
+            </div>
+            <div class="panel-body">
+                <h5 ><b>Mais detalhes</b></h5>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="row">
+
+
+    </div>
+</div>
+

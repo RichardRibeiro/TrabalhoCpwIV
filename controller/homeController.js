@@ -18,6 +18,6 @@ angular.module("ecommerce").controller("homeController", function ($scope, categ
             .catch(function (response) {
                 alert(response.data);
             })
-    }
+    };
     carregarCategorias();
 });

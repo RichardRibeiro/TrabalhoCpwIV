@@ -5,21 +5,24 @@
 <!--Diretiva da uma  extensão ao vocabulario do html(da mais poder ao html)-->
 <head>
     <meta charset="UTF-8">
-    <title>E-Comemrce</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <title>E-Commerce</title>
+
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <link href="node_modules/angular-loading-bar/build/loading-bar.min.css" rel="stylesheet">
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.min.js"></script>
     <script src="node_modules/angular-loading-bar/build/loading-bar.min.js"></script>
     <script src="app.js"></script>
     <script src="route.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="service/categoryService.js"></script>
-     <script src="service/productService.js"></script>
+    <script src="service/productService.js"></script>
+    <script src="service/carrinhoService.js"></script>
     <script src="controller/homeController.js"></script>
+    <script src="controller/carrinhoController.js"></script>
     <script src="controller/productsController.js"></script>
+    <script src="controller/descricaoController.js"></script>
 
 
 </head>
@@ -28,12 +31,11 @@
 <div ng-include="'view/home.html'"></div>
 
 
-
 <!--<a href="#!home"> Ir para Home</a>-->
 <!--<p>E-Commerce!</p>-->
 <div ng-view="view">
 
- </div>
+</div>
 
 </body>
 </html>

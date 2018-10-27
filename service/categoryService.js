@@ -8,8 +8,10 @@ angular.module("ecommerce").factory("categoryService",function ($http) {
         return $http.get(url+"/category/"+idCategoria);
     }
 
+
     return {
         listarTodasAsCategorias : _listarTodasAsCategorias,
-        buscaCategoriaPorID : _buscaCategoriaPorID,
+        buscaCategoriaPorID : _buscaCategoriaPorID
+
     }
 });
