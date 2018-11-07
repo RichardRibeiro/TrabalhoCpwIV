@@ -1,0 +1,41 @@
+<h1>Login | Bem vindo</h1>
+<div class="col-sm-12 col-md-6 ">
+    <div class="panel panel-default">
+        <form class="panel-heading">
+            <h1>Cadastre-se</h1>
+            <label>Nome:</label>
+            <p><input type="text" ng-model="novoUser.name"/></p>
+
+            <label>Usuario:</label>
+            <p> <input type="text" ng-model="novoUser.email"/></p>
+
+            <label>Senha:</label>
+            <p><input type="password" ng-model="novoUser.password"/></p>
+
+            <p>
+                <button type="button" class="btn btn-success"  ng-click="cadastrar(novoUser)" > Cadastrar</button>
+            </p>
+
+
+        </form>
+    </div>
+
+</div>
+<div class="col-sm-12 col-md-6 ">
+    <div class="panel panel-default">
+        <form class="panel-heading">
+            <h1>Autenticar-se</h1>
+            <label>Nome:</label>
+            <p><input type="text" ng-model="usuario.email"/></p>
+            <label>Senha:</label>
+            <p><input type="password" ng-model="usuario.senha"/></p>
+
+            <p>
+                <button type="button" class="btn btn-primary"  ng-click="autenticar(usuario)"> Entrar</button>
+            </p>
+        </form>
+    </div>
+
+</div>
+
+
