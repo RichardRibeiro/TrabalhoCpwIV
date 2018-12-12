@@ -1,0 +1,53 @@
+<div class="container">
+    <h4 class="page-header">Selecione a Categoria</h4>
+    <div class="row">
+        <p>
+        <div class="col-sm-3">
+            <select class="form-control" ng-model="orientador.value"
+                    class="form-control"
+                    ng-required="true">
+                <option value=""></option>
+
+                    <option ng-repeat="cat in Cat" value="{{cat.id}}" >{{cat.description}}</option>
+
+            </select>
+
+        </div>
+        <!--{{orientador.value}}-->
+
+        <button type="button" class="btn btn-primary" ng-click="carregarProdutos(orientador.value)" > Entrar</button>
+    </p>
+    </div>
+    <br/>
+</div>
+<div class="col-sm-6 col-md-1 ">
+</div>
+<div class="col-sm-6 col-md-10 ">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th scope="col">Foto</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Preço</th>
+            <th scope="col">Qtde</th>
+            <th scope="col">Marca</th>
+            <th scope="col">id</th>
+        </tr>
+        </thead>
+        <tbody ng-repeat="produto in produtos">
+        <tr>
+
+
+            <!--<td><img class="img-fluid" width="50px" ng-src="data:image/(png|jpg|webp);base64,{{produto.img}}"/></td>-->
+            <!--<td> <img src="data:image/png;base64, {{produto.img}}"  width="200px" alt="Red dot"  /></td>-->
+            <td> <img src="data:image/png;base64, {{produto.img}}"  width="200px" alt="Red dot"  /></td>
+            <td>{{produto.description}}</td>
+            <td>{{produto.price}}</td>
+            <td>{{produto.quantity}}</td>
+            <td>{{produto.brand}}</td>
+            <td>{{produto.id}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <a type="button" class="btn btn-success" href="#!cadastroProduto">Cadastrar Produto</a>
+</div>

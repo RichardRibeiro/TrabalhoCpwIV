@@ -19,6 +19,36 @@ angular.module("ecommerce").config(["$routeProvider", function ($routeProvider) 
         templateUrl: "view/login.html",
         controller: "loginController"
     });
+     $routeProvider.when("/listarProduto", {
+        templateUrl: "view/listarProduto.html",
+        controller: "listarProdutoController"
+    });
+
+    $routeProvider.when("/listarCategoria", {
+        templateUrl: "view/listarCategoria.html",
+        controller: "listarCategoriaController"
+    });
+    $routeProvider.when("/cadastroCategoria", {
+        templateUrl: "view/cadastroCategoria.html",
+        controller: "cadastrarCategoriaController"
+    });
+    $routeProvider.when("/cadastroProduto", {
+        templateUrl: "view/cadastroProduto.html",
+        controller: "cadastroProdutoController"
+    });
+
+    $routeProvider.when("/finalizarCompra", {
+        templateUrl: "view/finalizarCompra.html",
+        controller: "carrinhoController"
+    });
+
+    $routeProvider.when("/minhasCompras", {
+        templateUrl: "view/minhasCompras.html",
+        controller: "minhasComprasController"
+    });
+
+
+
 
 
 }]);

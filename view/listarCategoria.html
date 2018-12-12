@@ -1,0 +1,24 @@
+
+    <div class="col-sm-6 col-md-1 ">
+    </div>
+    <div class="col-sm-6 col-md-10 ">
+    <table class="table table-bordered">
+
+        <thead >
+        <tr>
+            <th scope="col">ID </th>
+            <th scope="col">Categoria</th>
+        </tr>
+        </thead>
+        <tbody ng-repeat="categorias in Cat">
+        <tr>
+            <td>{{categorias.id}}</td>
+            <td><a type="text"  href="#!categoryProducts/{{categorias.id}}">{{categorias.description}}</a></td>
+        </tr>
+        </tbody>
+
+
+    </table>
+    <a type="button" class="btn btn-success" href="#!cadastroCategoria">Cadastrar Categoria</a>
+</div>
+</div>

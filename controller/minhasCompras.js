@@ -1,6 +1,5 @@
 angular.module("ecommerce")
-    .controller("carrinhoController", function ($scope, carrinhoService) {
-
+    .controller("minhasComprasController", function ($scope, carrinhoService) {
         var visualizarProdutosCarrinho = function () {
             $scope.produtos = carrinhoService.listarProdutos()
             var total = 0;
@@ -15,6 +14,4 @@ angular.module("ecommerce")
             visualizarProdutosCarrinho();
         }
         visualizarProdutosCarrinho();
-
-
     });

@@ -1,4 +1,4 @@
-angular.module("ecommerce").controller("homeController", function ($scope, categoryService) {
+angular.module("ecommerce").controller("homeController", function ($scope, categoryService, loginService) {
 
     var carregarCategorias = function(){
         categoryService.listarTodasAsCategorias()
@@ -20,4 +20,25 @@ angular.module("ecommerce").controller("homeController", function ($scope, categ
             })
     };
     carregarCategorias();
+
+
+    var funcao = function () {
+        if (loginService.logado() == "ADMINISTRATOR") {
+            $scope.acesso = true;
+            $scope.logout = true;
+            $scope.logiin = false;
+        }else{
+            $scope.logiin = true;
+            $scope.acesso = false;
+            $scope.logout = false;
+        }
+
+    };
+    funcao();
+
+    $scope.logoout = function () {
+        loginService.logout();
+        location.reload(menubar);
+        $location.url("/home")
+    };
 });

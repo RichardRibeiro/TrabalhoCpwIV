@@ -1,0 +1,21 @@
+<p><H1> Minhas  Compras | Listagem </H1></p>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Data</th>
+        <th scope="col">Ações</th>
+
+    </tr>
+    </thead>
+    <tbody ng-repeat="produto in produtos">
+    <tr>
+        <td> <img src="data:image/png;base64, {{produto.img}}"  width="50px" alt="Red dot"  /></td>
+        <td>{{produto.id}}</td>
+        <td>{{produto.orderDate}}</td>
+        <td><button type="button" class="btn btn-primary" ng-click="">Visualizar</button></td>
+    </tr>
+    </tbody>
+</table>
+

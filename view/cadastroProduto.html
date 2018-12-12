@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>$Title$</title>
+</head>
+<body>
+
+
+<div class="col-sm-12 col-md-6 ">
+    <div class="panel panel-default">
+        <form class="panel-heading">
+            <h1 align="center">Cadastrar Produto</h1>
+            <label>Nome do produto :</label>
+            <p><input type="text" class="form-control" ng-model="produtos.description"/></p>
+
+            <label>Preço produto :</label>
+            <p><input type="text" class="form-control" ng-model="produtos.price"/></p>
+
+
+            <label>Nome do produto :</label>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <select  ng-model="produtos.category.id"
+                                class="form-control"
+                                ng-required="true">
+                            <option value=""></option>
+                            <option ng-repeat="cat in Cat" value="{{cat.id}}" >{{cat.description}}</option>
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <label>Preço promocional :</label>
+            <p><input type="number" ng-model="produtos.promotionalPrice" class="form-control" /></p>
+
+            <label>Marca :</label>
+            <p><input type="text" ng-model="produtos.brand" class="form-control"/></p>
+
+            <label>Quantidade :</label>
+            <p><input type="number" ng-model="produtos.quantity" class="form-control"/></p>
+
+            <label>Img :</label>
+            <input type="file" ng-model="produtos.img" base-sixty-four-input >
+
+            <p><button type="button" class="btn btn-success" ng-click="cadastrarProduto(produtos)"> Cadastrar Produto</button></p>
+
+
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

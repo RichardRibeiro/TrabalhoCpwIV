@@ -30,10 +30,10 @@ angular.module("ecommerce")
         {
             carrinhoService.addProduto(Produto, 1);
         }
-        ;
+
 
         carregarProdutos();
-        carregarCategoria()
+        carregarCategoria();
 
 
     });
